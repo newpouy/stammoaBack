@@ -1,0 +1,67 @@
+{
+  "connection": "default",
+  "collectionName": "cafe",
+  "info": {
+    "name": "cafe",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "multiple": false
+    },
+    "location": {
+      "type": "json",
+      "multiple": false
+    },
+    "saved": {
+      "type": "boolean",
+      "multiple": false
+    },
+    "liked": {
+      "type": "boolean",
+      "multiple": false
+    },
+    "wifi": {
+      "type": "boolean",
+      "multiple": false
+    },
+    "study": {
+      "type": "boolean",
+      "multiple": false
+    },
+    "pet": {
+      "type": "boolean",
+      "multiple": false
+    },
+    "baby": {
+      "type": "boolean",
+      "multiple": false
+    },
+    "restroom": {
+      "type": "boolean",
+      "multiple": false
+    },
+    "plug": {
+      "type": "boolean",
+      "multiple": false
+    },
+    "coupons": {
+      "collection": "coupon",
+      "via": "cafe"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "couponImg": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}

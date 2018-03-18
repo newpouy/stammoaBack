@@ -1,0 +1,21 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "coupon",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "createDate": {
+      "type": "date",
+      "multiple": false
+    },
+    "cafe": {
+      "model": "cafe",
+      "via": "coupons"
+    }
+  }
+}

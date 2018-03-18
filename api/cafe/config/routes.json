@@ -1,0 +1,44 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cafe",
+      "handler": "Cafe.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cafe/:_id",
+      "handler": "Cafe.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cafe",
+      "handler": "Cafe.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cafe/:_id",
+      "handler": "Cafe.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cafe/:_id",
+      "handler": "Cafe.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
